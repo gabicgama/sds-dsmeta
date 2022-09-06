@@ -1,12 +1,18 @@
-import { useState } from 'react'
-import NotificationButton from './components/NotificationButton/notification-button.index'
+import Header from './components/Header/header.index';
+import SalesCard from './components/SalesCard/sales-card.index';
 
 
 function App() {
   return (
     <>
-      <h1>hello world</h1>
-      <NotificationButton></NotificationButton>
+      <Header></Header>
+      <main>
+        <section id="sales">
+          <div className="dsmeta-container">
+            <SalesCard></SalesCard>
+          </div>
+        </section>
+      </main>
     </>)
 }
 
